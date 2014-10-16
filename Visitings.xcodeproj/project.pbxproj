@@ -13,6 +13,7 @@
 		B28109FC19C13A0F00008F0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28109FB19C13A0F00008F0B /* Images.xcassets */; };
 		B28109FF19C13A0F00008F0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B28109FD19C13A0F00008F0B /* LaunchScreen.xib */; };
 		B2810A0B19C13A0F00008F0B /* VisitingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2810A0A19C13A0F00008F0B /* VisitingsTests.swift */; };
+		B2884FF719C3747200D7DED7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2884FF619C3747200D7DED7 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B2810A0419C13A0F00008F0B /* VisitingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisitingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2810A0919C13A0F00008F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2810A0A19C13A0F00008F0B /* VisitingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitingsTests.swift; sourceTree = "<group>"; };
+		B2884FF619C3747200D7DED7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2884FF719C3747200D7DED7 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +85,7 @@
 				B28109F819C13A0F00008F0B /* Main.storyboard */,
 				B28109FB19C13A0F00008F0B /* Images.xcassets */,
 				B28109FD19C13A0F00008F0B /* LaunchScreen.xib */,
+				B2884FF819C3747800D7DED7 /* Frameworks */,
 				B28109F219C13A0F00008F0B /* Supporting Files */,
 			);
 			path = Visitings;
@@ -110,6 +114,14 @@
 				B2810A0919C13A0F00008F0B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2884FF819C3747800D7DED7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2884FF619C3747200D7DED7 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +173,11 @@
 				TargetAttributes = {
 					B28109EE19C13A0F00008F0B = {
 						CreatedOnToolsVersion = 6.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					B2810A0319C13A0F00008F0B = {
 						CreatedOnToolsVersion = 6.0;
@@ -405,6 +422,7 @@
 				B2810A1019C13A0F00008F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2810A1119C13A0F00008F0B /* Build configuration list for PBXNativeTarget "VisitingsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +431,7 @@
 				B2810A1319C13A0F00008F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
